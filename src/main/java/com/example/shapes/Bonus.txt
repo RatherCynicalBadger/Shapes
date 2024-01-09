@@ -1,0 +1,64 @@
+Zadanie 3.1: Tworzenie Klasy Rectangle
+Cel zadania:
+Stworzenie klasy Rectangle, która reprezentuje prostokąt w systemie współrzędnych. Klasa ta powinna dziedziczyć po wcześniej utworzonej klasie Shape i implementować dodatkowe funkcjonalności specyficzne dla prostokąta.
+Szczegóły implementacji:
+Definicja Klasy Rectangle:
+Klasa Rectangle dziedziczy po klasie Shape.
+Dodaj do klasy Rectangle atrybuty width (szerokość) i height (wysokość).
+Implementuj konstruktor przyjmujący parametry x, y, color, width i height.
+Nadpisywanie Metody getDescription():
+Nadpisz metodę getDescription() w klasie Rectangle w taki sposób, aby zwracała informacje charakterystyczne dla prostokąta, takie jak jego położenie, kolor, szerokość i wysokość.
+Implementacja Metod getArea() i getPerimeter():
+Metoda getArea() powinna zwracać pole powierzchni prostokąta (szerokość razy wysokość).
+Metoda getPerimeter() powinna zwracać obwód prostokąta (suma długości wszystkich boków).
+Testowanie Klasy:
+Utwórz kilka instancji klasy Rectangle i przetestuj działanie nowych metod.
+Zadanie 3.2: Tworzenie i Zarządzanie Kształtami w Liście
+Cel zadania:
+Stworzenie kilku instancji klas Circle i Rectangle, a następnie dodanie ich do wspólnej listy. Wykorzystanie polimorfizmu do wywołania metod getDescription, getArea i getPerimeter dla każdego kształtu na liście.
+Szczegóły implementacji:
+Tworzenie Instancji Kształtów:
+Utwórz kilka obiektów klasy Circle i Rectangle z różnymi parametrami (współrzędne, kolor, rozmiary).
+Dodawanie Kształtów do Listy:
+Stwórz listę, która będzie przechowywać obiekty typu Shape (bazowa klasa dla Circle i Rectangle).
+Dodaj utworzone kształty do listy.
+Iteracja po Liście i Wywoływanie Metod:
+Przeiteruj po liście kształtów i dla każdego kształtu wywołaj metody getDescription, getArea i getPerimeter.
+Wyświetlanie Wyników:
+Wyświetl wyniki wywołań metod dla każdego kształtu, demonstrując polimorfizm w działaniu.
+Zadanie 3.3 TRUDNE: Implementacja Klasy Zarządzającej Kształtami z Detekcją Kolizji
+Cel zadania:
+Stworzenie klasy, która zarządza różnymi obiektami geometrycznymi, takimi jak koła i prostokąty, i umożliwia detekcję kolizji między nimi. Zadanie polega na implementacji metody, która po dodaniu nowego kształtu do systemu sprawdzi, czy dochodzi do kolizji (przecięcia się) z innymi już istniejącymi kształtami.
+Szczegóły implementacji:
+Klasa Zarządzająca Kształtami (ShapeManager):
+Klasa ta powinna przechowywać listę obiektów typu Shape (np. Circle, Rectangle).
+Implementuj metodę addShape(Shape shape), która dodaje nowy kształt do systemu.
+Po dodaniu nowego kształtu, klasa powinna automatycznie sprawdzić, czy występuje kolizja z innymi kształtami.
+Detekcja Kolizji:
+Implementuj metodę checkCollision(Shape newShape), która sprawdza, czy dany kształt koliduje z innymi kształtami w liście.
+Metoda ta powinna zwracać listę kształtów, z którymi nowy kształt koliduje.
+Rozszerzenie Klas Circle i Rectangle:
+Dodaj metody umożliwiające sprawdzenie kolizji, np. isCollidingWith(Shape shape).
+Implementacja tych metod może wymagać dodatkowej logiki matematycznej w zależności od typu kształtów.
+Testowanie Funkcjonalności:
+Utwórz instancje ShapeManager i dodaj do niej różne kształty.
+Przetestuj funkcjonalność detekcji kolizji, dodając nowe kształty i sprawdzając, czy dochodzi do ich przecięcia z istniejącymi kształtami.
+Zadanie 3.4 BARDZO TRUDNE
+Zadanie: Wizualizacja Kształtów z Użyciem JavaFX
+Cel zadania:
+Stworzenie aplikacji w JavaFX, która wizualizuje różne kształty geometryczne (np. koła i prostokąty) na ekranie. Zadanie polega na implementacji interfejsu użytkownika, który pozwala na dodawanie kształtów do sceny i ich wizualizację.
+Szczegóły implementacji:
+Przygotowanie Środowiska:
+Upewnij się, że masz zainstalowane i skonfigurowane JavaFX w swoim środowisku programistycznym.
+Tworzenie Interfejsu Użytkownika:
+Utwórz główne okno aplikacji z wykorzystaniem JavaFX.
+Dodaj elementy interfejsu, takie jak przyciski lub pola tekstowe, umożliwiające użytkownikowi wprowadzenie parametrów dla tworzonych kształtów (np. typ kształtu, rozmiar, kolor, pozycja).
+Implementacja Logiki Tworzenia Kształtów:
+Na podstawie danych wprowadzonych przez użytkownika, stwórz odpowiednie obiekty kształtów (Circle, Rectangle itp.).
+Dodaj te kształty do sceny w JavaFX, aby były widoczne dla użytkownika.
+Wizualizacja Kształtów:
+Zapewnij, że każdy dodany kształt jest odpowiednio wizualizowany na scenie.
+Możesz dodać dodatkowe funkcje, takie jak zmiana koloru, przesuwanie kształtów, czy usuwanie ich ze sceny.
+Testowanie i Walidacja:
+Przetestuj aplikację, aby upewnić się, że kształty są poprawnie tworzone i wyświetlane.
+Sprawdź, czy interfejs użytkownika jest intuicyjny i czy wszystkie funkcje działają zgodnie z oczekiwaniami.
