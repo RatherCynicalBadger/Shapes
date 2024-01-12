@@ -1,6 +1,5 @@
 package com.example.shapes;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 
 public abstract class Shape implements FigureCollision {
@@ -10,6 +9,8 @@ public abstract class Shape implements FigureCollision {
     protected javafx.scene.shape.Shape figure;
     protected Point center;
     protected Color color;
+    protected DragController draggy;
+
 
     public Shape(Point c) {
         this.id = nextId;
@@ -19,5 +20,7 @@ public abstract class Shape implements FigureCollision {
         this.color = Color.color(Math.random(), Math.random(), Math.random());
     }
 
-    protected abstract void draw(Pane plane);
+    public javafx.scene.shape.Shape getFigure() {
+        return this.figure;
+    }
 }

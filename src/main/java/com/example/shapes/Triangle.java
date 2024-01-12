@@ -1,10 +1,7 @@
 package com.example.shapes;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
-
-import java.util.ArrayList;
 
 public class Triangle extends Shape {
 
@@ -17,16 +14,11 @@ public class Triangle extends Shape {
         this.figure.setRotate(Math.random() * 360);
         this.figure.setStroke(Color.BLACK);
         this.figure.setStrokeWidth(2);
+        this.draggy = new DragController(this);
     }
 
     @Override
-    public ArrayList<Shape> checkCollision(Shape shape) {
-
-        return null;
+    public void checkCollision(Shape shape) {
     }
 
-    @Override
-    protected void draw(Pane plane) {
-        plane.getChildren().add(this.figure);
-    }
 }

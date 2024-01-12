@@ -1,9 +1,6 @@
 package com.example.shapes;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-
-import java.util.ArrayList;
 
 public class Circle extends Shape {
 
@@ -15,16 +12,11 @@ public class Circle extends Shape {
         this.figure = new javafx.scene.shape.Circle(this.center.xPosition, this.center.yPosition, this.radius, this.color);
         this.figure.setStroke(Color.BLACK);
         this.figure.setStrokeWidth(2);
+        this.draggy = new DragController(this);
     }
 
     @Override
-    public ArrayList<Shape> checkCollision(Shape shape) {
-
-        return null;
+    public void checkCollision(Shape shape) {
     }
 
-    @Override
-    protected void draw(Pane plane) {
-        plane.getChildren().add(this.figure);
-    }
 }

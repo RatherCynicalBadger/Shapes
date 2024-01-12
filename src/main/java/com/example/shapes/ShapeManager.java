@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class ShapeManager {
 
-    private static final double MAX_FIG_SIZE = 30;
-    private static final double MIN_FIG_SIZE = 15;
-    private final int MAX_NUMBER_OF_SHAPES = 40;
+    private static final double MAX_FIG_SIZE = 40;
+    private static final double MIN_FIG_SIZE = 20;
+    private final int MAX_NUMBER_OF_SHAPES = 20;
     private final ArrayList<Shape> shapes;
     private final Pane plane;
 
@@ -42,7 +42,7 @@ public class ShapeManager {
                 case 0:
                     Circle c = new Circle(randomSize(), center);
                     this.shapes.add(c);
-                    c.draw(this.plane);
+                    this.drawShape(c);
                     break;
                 case 3:
                     double length = MIN_FIG_SIZE + (Math.random() * (MAX_FIG_SIZE - MIN_FIG_SIZE));
@@ -54,18 +54,22 @@ public class ShapeManager {
                     Point v3 = new Point(center.xPosition - cos, center.yPosition - sin);
                     Triangle t = new Triangle(v1, v2, v3, center);
                     this.shapes.add(t);
-                    t.draw(this.plane);
+                    this.drawShape(t);
                     System.out.println();
                     break;
                 case 4:
                     Rectangle r = new Rectangle(randomSize() * 2, randomSize() * 2, center);
                     this.shapes.add(r);
-                    r.draw(this.plane);
+                    this.drawShape(r);
                     break;
                 default:
                     System.out.println("Wrong number dummy");
             }
         }
+    }
+
+    public void drawShape(Shape shape) {
+        this.plane.getChildren().add(shape.getFigure());
     }
 
     private double randomSize() {

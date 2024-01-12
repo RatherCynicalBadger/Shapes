@@ -1,9 +1,6 @@
 package com.example.shapes;
 
-import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
-
-import java.util.ArrayList;
 
 public class Rectangle extends Shape {
 
@@ -19,16 +16,10 @@ public class Rectangle extends Shape {
         this.figure.setFill(this.color);
         this.figure.setStroke(Color.BLACK);
         this.figure.setStrokeWidth(2);
+        this.draggy = new DragController(this);
     }
 
     @Override
-    public ArrayList<Shape> checkCollision(Shape shape) {
-
-        return null;
-    }
-
-    @Override
-    protected void draw(Pane plane) {
-        plane.getChildren().add(this.figure);
+    public void checkCollision(Shape shape) {
     }
 }

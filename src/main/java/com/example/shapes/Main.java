@@ -12,6 +12,7 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -21,13 +22,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-
-
         Group root = new Group();
-//        root.autosize();
-//        root.setAutoSizeChildren(true);
         //nowa scena
-        //Scene scene = new Scene(root, WINDOW_X + 250, WINDOW_Y + 50, Color.DARKGRAY);
         Scene scene = new Scene(root, Color.DARKGRAY);
         //podział na płaszczyznę i panel sterowania
         BorderPane borderPane = new BorderPane();
@@ -36,6 +32,11 @@ public class Main extends Application {
         Button button1 = new Button("Add random rectangle");
         Button button2 = new Button("Add random circle");
         Button button3 = new Button("Add random triangle");
+        Text instruction = new Text("""
+                Use buttons to add shapes to the plane.
+                Click on shape to drag it around.
+                If two shapes collide with each other effect will play.
+                """);
         //kształty
         ShapeManager shapeManager = new ShapeManager(plane);
         //tutaj przyciski dodające figury
@@ -44,7 +45,7 @@ public class Main extends Application {
         controlPanel.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
         controlPanel.setSpacing(10);
         controlPanel.setBackground(Background.fill(Color.LIGHTGRAY));
-        controlPanel.getChildren().addAll(button1, button2, button3);
+        controlPanel.getChildren().addAll(button1, button2, button3, instruction);
         controlPanel.autosize();
         plane.setMaxSize(1920, 1080);
 
