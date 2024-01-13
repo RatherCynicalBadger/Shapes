@@ -10,6 +10,7 @@ public abstract class Shape implements FigureCollision {
     protected Point center;
     protected Color color;
     protected DragController draggy;
+    protected boolean isColliding;
 
 
     public Shape(Point c) {
@@ -22,5 +23,40 @@ public abstract class Shape implements FigureCollision {
 
     public javafx.scene.shape.Shape getFigure() {
         return this.figure;
+    }
+
+    @Override
+    public void checkCollision(Shape shape) {
+        if (this.figure.getBoundsInParent().intersects(shape.getFigure().getBoundsInParent()) ) {
+            this.setColliding(true);
+            shape.setColliding(true);
+        } else {
+            this.setColliding(false);
+            shape.setColliding(false);
+        }
+    }
+
+    public void collisionReaction() {
+        this.figure.setStroke(Color.RED);
+        this.figure.setStrokeWidth(4);
+        this.figure.setOpacity(0.5);
+    }
+
+    public void noCollision() {
+        this.figure.setStrokeWidth(2);
+        this.figure.setStroke(Color.BLACK);
+        this.figure.setOpacity(1);
+    }
+
+    public boolean isColliding() {
+        return isColliding;
+    }
+    public void setColliding(boolean colliding) {
+        isColliding = colliding;
+        if (!colliding) {
+            noCollision();
+        } else {
+            collisionReaction();
+        }
     }
 }

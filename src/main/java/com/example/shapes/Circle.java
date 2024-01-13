@@ -14,9 +14,4 @@ public class Circle extends Shape {
         this.figure.setStrokeWidth(2);
         this.draggy = new DragController(this);
     }
-
-    @Override
-    public void checkCollision(Shape shape) {
-    }
-
 }

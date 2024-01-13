@@ -4,29 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eaa9cc0-167b-4e86-9ca4-d47074dce7f3" name="Changes" comment="Initial commit for shapes and collisions*.&#10;&#10;*Does not contain collisions. Yet.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Bonus.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/FigureCollision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/ShapeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/shapes/hello-view.fxml" afterDir="false" />
+    <list default="true" id="2eaa9cc0-167b-4e86-9ca4-d47074dce7f3" name="Changes" comment="Draggable shapes added. Still no collision.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/shapes/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/shapes/DragController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/DragController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/shapes/ShapeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/ShapeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/shapes/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/shapes/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/stealthy_badger/Documents/Shapes/src/main/java/com/example/shapes&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -119,8 +105,34 @@
       <workItem from="1704712651213" duration="4909000" />
       <workItem from="1704723647828" duration="2164000" />
       <workItem from="1704833379380" duration="3255000" />
-      <workItem from="1704837131105" duration="3978000" />
+      <workItem from="1704837131105" duration="4466000" />
+      <workItem from="1704889400908" duration="1504000" />
+      <workItem from="1704975764864" duration="316000" />
+      <workItem from="1704976204172" duration="676000" />
+      <workItem from="1705076746648" duration="2564000" />
+      <workItem from="1705079339110" duration="388000" />
+      <workItem from="1705083267337" duration="4183000" />
+      <workItem from="1705087500627" duration="902000" />
+      <workItem from="1705132231586" duration="971000" />
+      <workItem from="1705150339320" duration="3339000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit for shapes and collisions*.&#10;&#10;*Does not contain collisions. Yet.">
+      <option name="closed" value="true" />
+      <created>1704841209785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704841209785</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Draggable shapes added. Still no collision.">
+      <option name="closed" value="true" />
+      <created>1705087450610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705087450610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit for shapes and collisions*.&#10;&#10;*Does not contain collisions. Yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for shapes and collisions*.&#10;&#10;*Does not contain collisions. Yet." />
+    <MESSAGE value="Draggable shapes added. Still no collision." />
+    <option name="LAST_COMMIT_MESSAGE" value="Draggable shapes added. Still no collision." />
   </component>
 </project>

@@ -53,7 +53,7 @@ public class DragController {
                 this.target.getFigure().setTranslateX(0);
                 this.target.getFigure().setTranslateY(0);
 
-                //aktywacja detekcji kolizji tutaj
+                ShapeManager.checkListForCollision(this.target);
             }
         };
     }

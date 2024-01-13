@@ -16,9 +16,4 @@ public class Triangle extends Shape {
         this.figure.setStrokeWidth(2);
         this.draggy = new DragController(this);
     }
-
-    @Override
-    public void checkCollision(Shape shape) {
-    }
-
 }
