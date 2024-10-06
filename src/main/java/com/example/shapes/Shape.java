@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
 public abstract class Shape implements FigureCollision {
 
     public static int nextId = 0;
-    public int id;
+    protected int id;
     protected javafx.scene.shape.Shape figure;
     protected Point center;
     protected Color color;
@@ -13,12 +13,20 @@ public abstract class Shape implements FigureCollision {
     protected boolean isColliding;
 
 
-    public Shape(Point c) {
+    protected Shape(Point c) {
         this.id = nextId;
         nextId++;
         this.center = c;
-        //losowy kolor, bo czemu nie?
+        //random color
         this.color = Color.color(Math.random(), Math.random(), Math.random());
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public javafx.scene.shape.Shape getFigure() {
